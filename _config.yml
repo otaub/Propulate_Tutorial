@@ -1,6 +1,6 @@
 # Basic config, that must be set correctly
-baseurl: /markdownslides
-githuburl: https://github.com/a-nau/markdownslides/
+baseurl: /Propulate_Tutorial
+githuburl: https://github.com/otaub/Propulate_Tutorial/
 
 # Further config
 markdown_slide_separator: ---
@@ -15,7 +15,7 @@ slideNumber:
   #    "c":  flattened slide number
   #  "c/t":  flattened slide number / total slides
   # "none":  dont't show slide numbers
-  format: "c/t"
+  format: "none"
 
 ## Reveal.initialize
 ## At the end of your page you need to initialize reveal by running the following code. Note that all config values are optional and will default as specified below.
