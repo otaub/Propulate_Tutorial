@@ -25,4 +25,3 @@ propulator = propulate.Propulator(
         )
 
 propulator.propulate()
-propulator.summarize()
