@@ -12,13 +12,13 @@ from utils import get_dataloaders
 
 
 GPUS_PER_NODE = int(os.environ["SLURM_GPUS_PER_NODE"])
-assert GPUS_PER_NODE == 8
 NUM_WORKERS = int(os.environ["SLURM_CPUS_PER_TASK"])
-print(NUM_WORKERS)
-assert NUM_WORKERS == 7
 checkpoint_path = "./"
 dataset_path = f"/scratch/{os.environ['SLURM_JOB_ACCOUNT']}/{os.environ['USER']}/mnist"
 device = torch.device(f"cuda:{os.environ['LOCAL_RANK']}")
+num_generations = 100
+num_islands = 2
+migration_prob = 0.1
 
 seed = 42
 pollination = True
@@ -132,9 +132,9 @@ if __name__ == "__main__":
         loss_fn=loss_fn,
         propagator=propagator,
         rng=rng,
-        generations=100,
-        num_islands=2,
-        migration_probability=0.1,
+        generations=num_generations,
+        num_islands=num_islands,
+        migration_probability=migration_prob,
         pollination=pollination,
         checkpoint_path=checkpoint_path,
     )
