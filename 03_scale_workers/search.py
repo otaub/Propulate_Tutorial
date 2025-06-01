@@ -7,6 +7,7 @@ def loss_fn(params):
 
 limits = {"x": (-5.12, 5.12), "y": (-5.12, 5.12)}
 generations = 100
+num_islands = 2
 seed = 42
 rng=random.Random(seed + MPI.COMM_WORLD.rank)
 checkpoint_path="/tmp/pcheckpoints"
@@ -23,8 +24,8 @@ islands = propulate.Islands(
     loss_fn=loss_fn,
     propagator=propagator,
     rng=rng,
-    generations=100,
-    num_islands=2,
+    generations=generations,
+    num_islands=num_islands,
     migration_probability=0.1,
     pollination=pollination,
     checkpoint_path=checkpoint_path,
