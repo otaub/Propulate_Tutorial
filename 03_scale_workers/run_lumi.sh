@@ -1,10 +1,11 @@
 #!/bin/bash
-#SBATCH --account=project_462000131
-#SBATCH --partition=small
+#SBATCH --account=project_465001989
+#SBATCH --reservation=HPO_tutorial   # comment this out if the reservation is no longer available
+#SBATCH --partition=small-g
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=128
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=0
+#SBATCH --mem=10G
 #SBATCH --time=0:05:00
 
 module purge

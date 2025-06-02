@@ -27,6 +27,9 @@ Initialize a propulator and pass the ingredients from the previous steps.
 ## Run
 Let the propulator propulate.
 
+## On haicore
+Adapt the job script.
+
 # Useful links
 - [https://github.com/Helmholtz-AI-Energy/propulate](https://github.com/Helmholtz-AI-Energy/propulate)
 - [https://propulate.readthedocs.io/](https://propulate.readthedocs.io/)

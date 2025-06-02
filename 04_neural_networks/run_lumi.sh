@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --account=project_462000131
-##SBATCH --reservation=HPO_tutorial   # comment this out if the reservation is no longer available
+#SBATCH --account=project_465001989
+#SBATCH --reservation=HPO_tutorial   # comment this out if the reservation is no longer available
 #SBATCH --partition=small-g
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=8
