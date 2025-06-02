@@ -1,12 +1,15 @@
-# Multiple processes for a single propulate worker
+# Multiple processes for a single propulate worker: DDP
 
 If a single evaluation is expensive, it may make sense to parallelize it.
 Use thte neural network training example of exercise 04 and apply DDP.
+Setting up DDP requires configuring communication between the GPUs used by different ranks of the same worker.
 
 ## Job script
+
 Have a look at the job scripts and compare them with the ones for exercise 04.
 
 ## Training script
+
 Start from your training script from exercise 04 and adapt it for pytorch distributed data parallelism.
 
 ## Useful resources
