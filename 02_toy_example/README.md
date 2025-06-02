@@ -7,6 +7,9 @@ and Nelder-Mead, are also available.
 To show you how ``Propulate`` works, we use its *basic asynchronous evolutionary optimizer* to minimize two-dimensional
 mathematical functions.
 
+# Implement the script
+`search.py`
+
 ## Loss function
 Define a loss function that 
 - receives a dictionary of parameters
