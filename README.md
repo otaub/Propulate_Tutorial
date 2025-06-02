@@ -12,5 +12,5 @@ Can be found here: [https://otaub.github.io/Propulate_Tutorial/](https://otaub.g
 - [ ] scale to multiple processes
 - [ ] neural network example
 - [ ] a different propagator
-- [ ] data parallel training
-- [ ] visualization
+- [ ] multi rank worker
+- [ ] distributed data parallel training
