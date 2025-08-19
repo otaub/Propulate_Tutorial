@@ -3,7 +3,7 @@ Materials and templates for the Propulate tutorial.
 
 ## Slides
 
-Can be found here: [https://otaub.github.io/Propulate_Tutorial/](https://otaub.github.io/Propulate_Tutorial/)
+Can be found here: [https://otaub.github.io/markdownslides/propulate_intro](https://otaub.github.io/markdownslides/propulate_intro)
 
 ## Hands on
 
